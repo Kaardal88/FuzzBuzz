@@ -6,9 +6,9 @@
   <title>FuzzBuzz</title>
   <link rel="stylesheet" href="/css/output.css">
 </head>
-<body>
+<body class="bg-bgBody 100vh">
   <main>
-    <header class="bg-orange-300 shadow-md">
+    <header class="bg-customOrange shadow-md">
       <nav class="container mx-auto">
         <div class="flex justify-between">
           <a href="/" class="flex items-center py-4 px-2">
@@ -18,18 +18,67 @@
           
 
           <div class="hidden md:flex items-center space-x-2">
-            <a href="#" class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Home</a>
             <a href="/profile.html" class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Profile</a>
             <a href="#" class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Feed</a>
           </div>
         </div>
       </nav>
     </header>
+
+    <div class="min-h-screen bg-gray-900 flex items-center justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-11/12 lg:w-3/4 xl:w-2/3">
+        
+        <!-- Left Column (User Info) -->
+        <div class="bg-customGray p-4 rounded-lg flex flex-col items-center space-y-4">
+          <div class="w-24 h-24 bg-blue-500 rounded-full"></div> <!-- Profile Picture -->
+          <div class="text-white p-2 w-full text-center">Welcome, Kaardal88!</div>
+          <div class="text-white text-left p-4 w-full">
+            <p>Name:</p>
+            <p>Age:</p>
+            <p>Date of birth:</p>
+            <p>Settings</p>
+            <p>Log out</p>
+          </div>
+        </div>
+    
+        <!-- Center Column (Bio) -->
+        <div class="bg-gray-700 p-4 rounded-lg col-span-1 md:col-span-1">
+          <h2 class="text-gray-400 mb-2">Bio:</h2>
+          <p class="text-gray-300">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non architecto molestias voluptas, eum facilis nobis consequuntur tenetur maiores est nulla cumque quidem a ex sit praesentium dolores delectus. Ipsum rem adipisci optio quasi incidunt veritatis a excepturi molestiae doloremque perferendis aliquam, fugit nemo ex soluta facilis enim. Eum, laboriosam quidem?
+          </p>
+        </div>
+    
+        <!-- Right Column (Friends) -->
+        <div class="bg-gray-700 p-4 rounded-lg flex flex-col space-y-4">
+          <h2 class="text-gray-400 mb-2">Friends Online:</h2>
+          <div class="bg-gray-500 p-2 rounded-md flex items-center space-x-2">
+            <div class="w-6 h-6 bg-green-500 rounded-full"></div>
+            <p class="text-gray-300">Mark Markson</p>
+          </div>
+          <div class="bg-gray-500 p-2 rounded-md flex items-center space-x-2">
+            <div class="w-6 h-6 bg-green-500 rounded-full"></div>
+            <p class="text-gray-300">Amy Amyson</p>
+          </div>
+          <div class="bg-gray-500 p-2 rounded-md flex items-center space-x-2">
+            <div class="w-6 h-6 bg-green-500 rounded-full"></div>
+            <p class="text-gray-300">Frank Frankson</p>
+          </div>
+          <div class="bg-gray-500 p-2 rounded-md flex items-center space-x-2">
+            <div class="w-6 h-6 bg-green-500 rounded-full"></div>
+            <p class="text-gray-300">Carry Carryson</p>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+
    
 
-    <footer class="bg-gray-800 text-gray-300 py-10 fixed bottom-0 w-full">
+    <footer class="bg-customTeal text-gray-300 py-10 bottom-0 w-full">
       <div class="container mx-auto px-6 lg:px-8">
-        <!-- Logo og beskrivelse -->
+       
         <div class="flex flex-col md:flex-row md:justify-between">
           <div class="mb-6 md:mb-0">
             <img src="/images/fuzzbuzz-logo.png" alt="logo" class="w-24">
@@ -38,7 +87,7 @@
             </p>
           </div>
     
-          <!-- Navigasjon -->
+         
           <div class="flex space-x-10">
             <div>
               <h2 class="font-semibold text-white">Pages</h2>
@@ -48,19 +97,11 @@
                
               </ul>
             </div>
-            <div>
-              <h2 class="font-semibold text-white">Follow</h2>
-              <ul class="mt-4 space-y-2">
-                <li><a href="#" class="hover:text-white">Facebook</a></li>
-                <li><a href="#" class="hover:text-white">Instagram</a></li>
-                <li><a href="#" class="hover:text-white">Twitter</a></li>
-                <li><a href="#" class="hover:text-white">LinkedIn</a></li>
-              </ul>
-            </div>
+            
           </div>
         </div>
     
-        <!-- Copyright -->
+        
         <div class="mt-10 text-center text-gray-500">
           <p>&copy; 2024 FuzzBuzz | All rights reserved.</p>
         </div>

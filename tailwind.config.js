@@ -8,6 +8,7 @@ module.exports = {
         customGray: '#333',
         customTeal: '#0F4C5C',
         hoverTeal: '#256E82',
+        bgBody: '#18191A'
       },
 
       animation: {
