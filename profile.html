@@ -5,27 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FuzzBuzz</title>
   <link rel="stylesheet" href="/css/output.css">
+  <script src="/js/script.js" defer></script>
 </head>
 <body class="bg-bgBody 100vh">
 
-    <header class="bg-customOrange shadow-md fixed w-full top-0 z-50">
-      <nav class="container mx-auto">
-        <div class="flex justify-between">
-          <a href="/" class="flex items-center py-4 px-2">
-            <img src="/images/fuzzbuzz-logo.png" alt="Fuzzbuzz logo" class="w-36">
-          </a>
-          
-        
-
-          <div class="hidden md:flex items-center space-x-2">
-            <a href="/profile.html" class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Profile</a>
-            <a href="/feed.html" class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Feed</a>
-            <img src="/images/profileimg-some.png" alt="profile image" class="w-10">
-          </div>
+     <!-- Header -->
+  <header class="bg-customOrange shadow-md fixed w-full top-0 z-50">
+    <nav class="container mx-auto">
+      <div class="flex  justify-between">
+        <a href="/" class="flex items-center py-4 px-2">
+          <img src="/images/fuzzbuzz-logo.png" alt="Fuzzbuzz logo" class="w-36">
+        </a>
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="/profile.html" class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Profile</a>
+          <a href="/feed.html" class="py-4 px-2 text-black font-semibold border-b-2 border-customTeal">Feed</a>
+          <img src="/images/profileimg-some.png" alt="profile image" class="w-10">
         </div>
-        
-      </nav>
-    </header>
+
+        <!--Mobile navbar-->
+      <div id="menu-btn" class="md:hidden pr-4 pt-4">
+        <img src="/images/icons8-menu-50.png" class="w-8" alt="mobile menu icon">
+      </div>
+      </div>
+      
+    </nav>
+  </header>
+  <div id="mobileNav" class="container mt-24 text-white flex justify-center items-center mx-auto w-full hidden">
+    <ul class="mx-auto justify-center items-center uppercase text-center gap-3">
+      <li class="p-2 mb-4 ring-offset-2 ring-2 focus:ring-2 rounded-md  ring-blue-400 text-gray-400"><a href="#profile">Profile</a></li>
+      <li class="p-2 mb-4 ring-offset-2 ring-2 focus:ring-2 rounded-md"><a href="/feed.html">Feed</a></li>
+      <li class="p-2 mb-4 ring-offset-2 ring-2 focus:ring-2 rounded-md"><a href="/index.html">Log out</a></li>
+    </ul>
+  </div>
 
     <main id="profile" class="flex-grow bg-bgBody flex items-center justify-center flex-col">
 <section>
