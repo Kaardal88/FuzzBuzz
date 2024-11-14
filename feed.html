@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FuzzBuzz</title>
+  <link rel="stylesheet" href="/css/output.css">
+</head>
+<body class="bg-bgBody 100vh">
+
+  <!-- Header -->
+  <header class="bg-customOrange shadow-md fixed w-full top-0 z-50">
+    <nav class="container mx-auto">
+      <div class="flex justify-between">
+        <a href="/" class="flex items-center py-4 px-2">
+          <img src="/images/fuzzbuzz-logo.png" alt="Fuzzbuzz logo" class="w-36">
+        </a>
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="/profile.html" class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Profile</a>
+          <a href="/feed.html" class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Feed</a>
+          <img src="/images/profileimg-some.png" alt="profile image" class="w-10">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main container with flex layout -->
+  <div class="container mx-auto flex flex-col md:flex-row justify-between space-y-4 md:space-y-0 md:space-x-4 mt-24">
+    
+    <!-- Left sidebar section -->
+     <!-- Left sidebar section -->
+  <div class="w-full md:w-1/5">
+    <div class="bg-customGray p-4 rounded-lg flex flex-col items-center space-y-4 h-auto mt-3 md:mt-0">
+      <a href="/profile.html">
+        <div class="rounded-full">
+          <img src="/images/profileimg-some.png" alt="profile user image" class="rounded-full w-28 h-28 md:w-auto md:h-auto">
+        </div>
+      </a>
+      <div class="text-white p-2 w-full text-left">
+        <p>Kaardal88!</p>
+        <p class="font-semibold">Followers: <span class="font-normal text-gray-300">650 buzzers</span></p>
+      </div>
+    </div>
+
+    <div class="bg-customGray p-4 my-3 rounded-lg flex flex-col items-left space-y-4 h-auto">
+      <p class="text-white font-semibold">Filter your fuzz</p>
+      <label class="container text-white">
+        <input type="checkbox" checked="checked">
+        <span class="checkmark">What people eat</span>
+      </label>
+
+      <label class="container text-white">
+        <input type="checkbox" checked="checked">
+        <span class="checkmark">Unconfirmed rumours</span>
+      </label>
+
+      <label class="container text-white">
+        <input type="checkbox" checked="checked">
+        <span class="checkmark">Workouts</span>
+      </label>
+
+      <label class="container text-white">
+        <input type="checkbox" checked="checked">
+        <span class="checkmark">Random fuzz</span>
+      </label>
+    </div>
+  </div>
+
+  
+
+    <!-- Main Section -->
+    <main class="w-full md:w-3/5 bg-customGray rounded-lg p-4">
+      <section>
+        <!-- Section for small feed/follow suggestions -->
+        <div class="bg-customGray rounded-lg flex flex-col justify-center p-4">
+          <h2 class="text-gray-400 mb-2">News feed</h2>
+
+          <div class="grid grid-cols-1 gap-3">
+            <!-- Post 1 -->
+            <div class="bg-gray-600 p-1 w-full h-auto rounded-md flex items-center flex-col gap-4">
+              <img src="/images/deadlift-guy.jpg" alt="post image" class="w-auto h-auto md:flex-col rounded-lg p-4">
+              <div class="flex-col p-4">
+                <p class="text-gray-100 font-semibold md:mt-4">@mike_mikeson</p>
+                <p class="text-white pb-2 text-sm md:text-small lg:text-base md:pr-2 md:pt-2 md:pb-2">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis saepe reprehenderit at delectus similique ab!
+                </p>
+                <div class="flex justify-between pt-2">
+                <button class="bg-gray-200 pl-4 pr-4 pt-2 pb-2 rounded-md font-semibold text-sm mb-2">Buzz</button>
+                <button class="bg-customOrange pl-4 pr-4 rounded-md font-semibold text-sm mb-2">Fuzz</button>
+                </div>
+              </div>
+            </div>
+  <!-- Post 2 -->
+  <div class="bg-gray-600 p-1 w-full h-auto rounded-md flex items-center flex-col gap-4">
+    <img src="/images/nature-family.jpg" alt="post image" class="w-auto h-auto md:flex-col rounded-lg p-4">
+    <div class="flex-col p-4">
+      <p class="text-gray-100 font-semibold md:mt-4">@john_johnson</p>
+      <p class="text-white  pb-2 text-sm md:text-small lg:text-base md:pr-2 md:pt-2 md:pb-2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis saepe reprehenderit at delectus similique ab!
+      </p>
+      <div class="flex justify-between pt-2">
+      <button class="bg-gray-200 pl-4 pr-4 pt-2 pb-2 rounded-md font-semibold text-sm mb-2">Buzz</button>
+      <button class="bg-customOrange pl-4 pr-4 rounded-md font-semibold text-sm mb-2">Fuzz</button>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Post 3-->
+   <div class="bg-gray-600 p-1 w-full h-auto rounded-md flex items-center flex-col gap-4">
+    <img src="/images/status-image-2.jpg" alt="post image" class="w-auto h-auto md:flex-col rounded-lg p-4">
+    <div class="flex-col p-4">
+      <p class="text-gray-100 font-semibold md:mt-4">@frank_frankson</p>
+      <p class="text-white pb-2 text-sm md:text-small lg:text-base md:pr-2 md:pt-2 md:pb-2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis saepe reprehenderit at delectus similique ab!
+      </p>
+      <div class="flex justify-between pt-2">
+      <button class="bg-gray-200 pl-4 pr-4 pt-2 pb-2 rounded-md font-semibold text-sm mb-2">Buzz</button>
+      <button class="bg-customOrange pl-4 pr-4 rounded-md font-semibold text-sm mb-2">Fuzz</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post 4-->
+  <div class="bg-gray-600 p-1 w-full h-auto rounded-md flex items-center flex-col gap-4">
+    <img src="/images/status-img-1.jpg" alt="post image" class="w-auto h-auto md:flex-col rounded-lg p-4">
+    <div class="flex-col p-4">
+      <p class="text-gray-100 pb-4 font-semibold md:mt-4">@amy_amyson</p>
+      <p class="text-white pb-2 text-sm md:text-small lg:text-base md:pr-2 md:pt-2 md:pb-2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis saepe reprehenderit at delectus similique ab!
+      </p>
+      <div class="flex justify-between pt-2">
+      <button class="bg-gray-200 pl-4 pr-4 pt-2 pb-2 rounded-md font-semibold text-sm mb-2">Buzz</button>
+      <button class="bg-customOrange pl-4 pr-4 rounded-md font-semibold text-sm mb-2">Fuzz</button>
+      </div>
+    </div>
+  </div>
+
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+  <!-- Right Column (with search bar) -->
+  <div class="bg-customGray p-4 rounded-lg flex flex-col items-center space-y-4 order-first md:order-last sm:w-full sm:h-full md:w-1/4 md:h-1/5">
+    <search>
+      <form>
+        <input class="rounded-lg p-2  focus:bg-blue-100 md:w-28 lg:w-full" name="fsrch" id="fsrch" placeholder="Search fuzzbuzz">
+      </form>
+    </search>
+    <div class="bg-customGray p-4 rounded-lg flex flex-col space-y-4 w-full">
+      <h2 class="text-gray-400 mb-2">Friends Online:</h2>
+      <div class="bg-gray-600 p-2 rounded-md flex items-center space-x-2">
+        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+        <p class="text-gray-100">Mark Markson</p>
+      </div>
+      <div class="bg-gray-600 p-2 rounded-md flex items-center space-x-2">
+        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+        <p class="text-gray-100">Amy Amyson</p>
+      </div>
+      <div class="bg-gray-600 p-2 rounded-md flex items-center space-x-2">
+        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+        <p class="text-gray-100">Frank Frankson</p>
+      </div>
+      <div class="bg-gray-600 p-2 rounded-md flex items-center space-x-2">
+        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+        <p class="text-gray-100">Carry Carryson</p>
+      </div>
+    </div>
+  </div>
+  
+
+  </div>
+</body>
+
+
+
+    <footer class="bg-customTeal text-gray-300 py-10 mt-48 bottom-0 w-full">
+      <div class="container mx-auto px-6 lg:px-8">
+       
+        <div class="flex flex-col md:flex-row md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <img src="/images/fuzzbuzz-logo.png" alt="fuzzbuzz logo" class="w-24">
+            <p class="mt-2 text-gray-200">
+              We have something fuzzy you can buzz about!
+            </p>
+          </div>
+    
+         
+          <div class="flex space-x-10">
+            <div>
+              <h2 class="font-semibold text-white">Pages</h2>
+              <ul class="mt-4 space-y-2">
+                <li><a href="#" class="hover:text-white">Profile</a></li>
+                <li><a href="#" class="hover:text-white">Feed</a></li>
+               
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+    
+        
+        <div class="mt-10 text-center text-gray-300">
+          <p>&copy; 2024 FuzzBuzz | All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+
+   
+    
+  
+  
+</body>
+</html>
