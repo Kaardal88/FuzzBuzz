@@ -7,6 +7,7 @@ module.exports = {
 
       colors: {
         customOrange: '#FB8B24',
+        customOrangeHover: '#c96910',
         customGray: '#333',
         customTeal: '#0F4C5C',
         hoverTeal: '#256E82',
