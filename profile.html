@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -26,11 +26,6 @@
           <img src="/images/profileimg-some.png" alt="profile image" class="w-10">
 
         </div>
-
-        <button id="theme-toggle">
-          <img id="sun" src="/images/icons8-sun-50.png" alt="sun lightmode">
-          <img id="moon" src="/images/icons8-moon-50.png" alt="moon darkmode">
-        </button>
 
         <!--Mobile navbar-->
         <div id="menu-btn" class="md:hidden pr-4 pt-4">
@@ -70,7 +65,6 @@
             </div>
             <div class="text-white dark:text-black p-2 w-full text-center border-bottom-white">Welcome, Kaardal88!</div>
             <div class="text-white dark:text-black text-left p-4 w-full">
-              <h1 class="font-bold">PR testing...!</h1>
               <p>Name:
               <p class="text-gray-400 dark:text-black">Kim-André Kårdal</p>
               </p>
@@ -81,7 +75,13 @@
               <p class="text-gray-400 dark:text-black">220588</p>
               </p>
               <div class="border-bottom-white w-20 py-3"></div>
-              <p class="py-3 text-gray-400 dark:text-black text-light">Settings</p>
+              <div class="w-full flex">
+                <p class="text-white dark:text-black pr-2">Dark/Light mode</p>
+                <button id="theme-toggle" class="w-6 flex items-center">
+                  <img id="sun" src="/images/icons8-sun-50.png" alt="sun lightmode">
+                  <img id="moon" src="/images/icons8-moon-50.png" alt="moon darkmode">
+                </button>
+              </div>
               <a href="/index.html" class="p-0 m-0 w-0">
                 <p class="text-gray-400 dark:text-black font-light hover:text-gray-300">Log out</p>
               </a>
