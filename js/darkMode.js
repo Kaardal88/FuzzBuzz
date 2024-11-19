@@ -4,7 +4,7 @@ toggleButton.addEventListener('click', () => {
   const htmlElement = document.documentElement;
   if (htmlElement.classList.contains('dark')) {
     htmlElement.classList.remove('dark');
-    localStorage.theme = 'light';
+    localStorage.theme = 'dark';
   } else {
     htmlElement.classList.add('dark');
     localStorage.theme = 'dark';
