@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}", "!./node_modules/**/*"],
+  darkMode: 'class',
+  content: ['./**/*.{html,js}', "!./node_modules/**/*"],
   theme: {
     extend: {
+
       colors: {
         customOrange: '#FB8B24',
         customGray: '#333',
@@ -24,7 +26,11 @@ module.exports = {
       }
 
     },
+
     plugins: [],
+
   }
+
+
 }
 
