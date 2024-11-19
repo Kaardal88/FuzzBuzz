@@ -23,13 +23,9 @@
           <a href="/profile.html"
             class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Profile</a>
           <a href="/feed.html" class="py-4 px-2 text-black font-semibold border-b-2 border-customTeal">Feed</a>
-          <img src="/images/profileimg-some.png" alt="profile image" class="w-10">
+
         </div>
 
-        <button id="theme-toggle">
-          <img id="sun" src="/images/icons8-sun-50.png" alt="sun lightmode">
-          <img id="moon" src="/images/icons8-moon-50.png" alt="moon darkmode">
-        </button>
 
         <!--Mobile navbar-->
         <div id="menu-btn" class="md:hidden pr-4 pt-4">
@@ -49,7 +45,6 @@
       </div>
 
     </nav>
-
   </header>
 
 
@@ -69,7 +64,7 @@
               class="rounded-full w-28 h-28 md:w-auto md:h-auto">
           </div>
         </a>
-        <div class="text-white dark:text-black p-2 w-full text-left">
+        <div class="text-white dark:text-black p-2 w-full text-left text-lg font-semibold">
           <p>Kaardal88!</p>
           <p class="font-semibold">Followers: <span class="font-normal text-gray-300 dark:text-black">650 buzzers</span>
           </p>
@@ -77,7 +72,16 @@
       </div>
 
       <div class="bg-customGray dark:bg-indigo-100 p-4 my-3 rounded-lg flex flex-col items-left space-y-4 h-auto">
-        <p class="text-white dark:text-black font-semibold">Filter your fuzz</p>
+        <p class="text-white dark:text-black font-semibold text-lg">Filter your fuzz</p>
+        <div class="w-full flex">
+          <p class="text-white dark:text-black pr-2">Dark/Light mode</p>
+          <button id="theme-toggle" class="w-6 flex items-center">
+            <img id="sun" src="/images/icons8-sun-50.png" alt="sun lightmode">
+            <img id="moon" src="/images/icons8-moon-50.png" alt="moon darkmode">
+          </button>
+        </div>
+
+
         <label class="container text-white dark:text-black">
           <input type="checkbox" checked="checked">
           <span class="checkmark">What people eat</span>
