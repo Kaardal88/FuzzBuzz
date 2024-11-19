@@ -4,10 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Feed your buzz with some fuzz from your friends and more. Connect with new fuzzbuzzers and keep up to date with your personalized newsfeed">
   <title>Feed | FuzzBuzz</title>
   <link rel="stylesheet" href="/css/output.css">
+  <link rel="icon" href="/images/fb-favicon.png">
   <script src="/js/script.js" defer></script>
   <script src="/js/darkMode.js" defer></script>
+  <script src="/js/uploadFiles.js" defer></script>
+  <script src="/js/confetti.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
 </head>
 
 <body class="bg-bgBody dark:bg-white 100vh">
@@ -16,13 +22,14 @@
   <header class="bg-customOrange dark:bg-indigo-300 dark:text-black shadow-md fixed w-full top-0 z-50">
     <nav class="container mx-auto">
       <div class="flex  justify-between">
-        <a href="/profile.html" class="flex items-center py-4 px-2">
+        <a href="/profile/index.html" class="flex items-center py-4 px-2">
           <img src="/images/fuzzbuzz-logo.png" alt="Fuzzbuzz logo" class="w-36">
         </a>
         <div class="hidden md:flex items-center space-x-2">
-          <a href="/profile.html"
+          <a href="/profile/index.html"
             class="py-4 px-2 text-black font-semibold hover:text-blue-500 hover:underline transition duration-200">Profile</a>
           <a href="/feed.html" class="py-4 px-2 text-black font-semibold border-b-2 border-customTeal">Feed</a>
+          <img src="/images/profileimg-some.png" alt="profile image" class="w-10">
 
         </div>
 
@@ -83,22 +90,22 @@
 
 
         <label class="container text-white dark:text-black">
-          <input type="checkbox" checked="checked">
+          <input type="checkbox">
           <span class="checkmark">What people eat</span>
         </label>
 
         <label class="container text-white dark:text-black">
-          <input type="checkbox" checked="checked">
+          <input type="checkbox">
           <span class="checkmark">Unconfirmed rumours</span>
         </label>
 
         <label class="container text-white dark:text-black">
-          <input type="checkbox" checked="checked">
+          <input type="checkbox">
           <span class="checkmark">Workouts</span>
         </label>
 
         <label class="container text-white dark:text-black">
-          <input type="checkbox" checked="checked">
+          <input type="checkbox">
           <span class="checkmark">Random fuzz</span>
         </label>
       </div>
@@ -114,6 +121,32 @@
           <h2 class="text-gray-400 dark:text-black mb-2">News feed</h2>
 
           <div class="grid grid-cols-1 gap-3">
+
+            <!--Create your own post section-->
+
+            <div
+              class="container bg-gray-600 dark:bg-gray-100 p-2 w-full h-auto rounded-md flex items-center flex-col gap-4">
+              <div class="flex items-center space-x-2 w-full">
+                <img src="/images/profileimg-some.png" alt="profile image" class="w-10">
+                <textarea name="description" rows="2" cols="56"
+                  class="flex w-full p-1 rounded-md bg-slate-500 dark:bg-white"
+                  placeholder="Create some fuzz"></textarea>
+              </div>
+              <div class="w-full flex p-2 justify-end gap-3">
+                <button class=" bg-gray-200 hover:bg-gray-400 text-black font-semibold rounded-lg p-1">Record</button>
+
+                <form>
+                  <button type="button" id="uploadButton"
+                    class="bg-gray-200 hover:bg-gray-400 text-black font-semibold rounded-lg p-1">Image</button>
+                  <input type="file" id="uploadFile" name="filename" style="display: none;">
+                </form>
+
+                <button id="confettiButton"
+                  class=" bg-customOrange hover:bg-customOrangeHover text-black font-semibold rounded-lg p-1">Fuzz</button>
+              </div>
+            </div>
+
+
             <!-- Post 1 -->
             <div class="bg-gray-600 dark:bg-gray-100 p-1 w-full h-auto rounded-md flex items-center flex-col gap-4">
               <img src="/images/deadlift-guy.jpg" alt="post image" class="w-auto h-auto md:flex-col rounded-lg p-4">
