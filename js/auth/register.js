@@ -1,7 +1,7 @@
-import { REG_URL } from "../constants/api.js";
+import { BASE_URL, ENDPOINTS } from "../api/endpoints.js";
 
 export async function register(user) {
-  const url = `${REG_URL}`;
+  const url = `${BASE_URL}${ENDPOINTS.register}`;
 
   const options = {
     method: "POST",
@@ -12,11 +12,11 @@ export async function register(user) {
   };
 
   const response = await fetch(url, options);
-  const json = await response.json();
 
   if (!response.ok) {
+    const json = await response.json();
     throw new Error(json.errors?.[0]?.message || "Registration failed");
   }
 
-  return json;
+  return await response.json();
 }

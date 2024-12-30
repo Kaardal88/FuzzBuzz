@@ -1,7 +1,7 @@
-import { LOGIN_URL } from "../constants/api.js";
+import { BASE_URL, ENDPOINTS } from "../api/endpoints.js";
 
 export async function login(user) {
-  const url = `${LOGIN_URL}`;
+  const url = `${BASE_URL}${ENDPOINTS.login}`;
 
   const options = {
     method: "POST",
@@ -12,11 +12,11 @@ export async function login(user) {
   };
 
   const response = await fetch(url, options);
-  const json = await response.json();
 
   if (!response.ok) {
+    const json = await response.json();
     throw new Error(json.errors?.[0]?.message || "Login failed");
   }
 
-  return json;
+  return await response.json();
 }
